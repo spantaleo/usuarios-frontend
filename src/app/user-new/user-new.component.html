@@ -1,0 +1,14 @@
+<h2>Nuevo Usuario</h2>
+<br/>
+<div>
+<label>Nombre:</label>
+    <input class="nombre" id="nombre" name="nombre" placeholder="nombre" maxlength="35"  [(ngModel)]="nombre" />  
+<label> Apellido:</label>
+    <input class="apellido" id="apellido" name="apellido" placeholder="apellido" maxlength="35"  [(ngModel)]="apellido" />
+<label> Username:</label>    
+    <input class="username" id="username" name="username" placeholder="username" maxlength="35"  [(ngModel)]="username" /> 
+<label> Email:</label>
+    <input class="email" id="email" name="email" placeholder="email"  [(ngModel)]="email" maxlength="35"  />
+</div>
+<br/> <br/>    
+<button (click)="saveUser()">Guardar</button>

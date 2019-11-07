@@ -1,0 +1,13 @@
+<h2>Buscar Usuario</h2>
+<br/>
+
+<input class="searchTerm" id="searchTerm" pattern="^[a-z]{20}" name="searchTerm" placeholder="searchTerm" maxlength="35" (change)="getUsers()"  [(ngModel)]="searchTerm" /> 
+<br/>
+<ul class="users">
+    <li *ngFor="let user of users">
+      <a routerLink="/detail/{{user.id}}">
+        <span class="badge">{{user.id}}</span> {{user.nombre}}
+      </a>
+    </li>
+  </ul>
+  

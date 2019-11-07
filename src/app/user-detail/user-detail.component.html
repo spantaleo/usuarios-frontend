@@ -1,0 +1,19 @@
+<div *ngIf="user">
+    <h2>{{user.name | uppercase}} Detalle</h2>
+    <div><span>id: </span>{{user.id}}</div>
+    <div>
+        <label>Nombre:</label>
+        <input [(ngModel)]="user.nombre" placeholder="nombre" maxlength="35"  />
+        <label> Apellido:</label>     
+        <input [(ngModel)]="user.apellido" placeholder="apellido" maxlength="35" />
+        <label> Username:</label>
+        <input [(ngModel)]="user.username" placeholder="username" maxlength="35"  />
+        <label> Email:</label>        
+        <input [(ngModel)]="user.email" placeholder="email" maxlength="35" />
+     
+    </div>
+    <br/>
+    <button (click)="updateUser()">Actualizar</button>
+    <button (click)="deleteUser()">Eliminar</button>
+    <button (click)="goBack()">Volver</button>
+  </div>
